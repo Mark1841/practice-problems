@@ -4,12 +4,14 @@
 import MissingNumber
 import RomeToNum
 import SubArraySum
+import Anagram
 
 
 menu_items = ["Find Missing Number",
-        "Roman Numerals to Integers",
-        "Find sub array with given sum",
-        "Exit"]
+              "Roman Numerals to Integers",
+              "Find sub array with given sum",
+              "Anagram",
+              "Exit"]
 
 def displayMenu(items):
     """ Displays menu items submitted as list and returns selection """
@@ -38,6 +40,8 @@ def main():
             RomeToNum.roman_to_int()
         elif selection == 3:
             SubArraySum.find_sub_array()
+        elif selection == 4:
+            Anagram.anagram()
         else:
             end_program = True
 
